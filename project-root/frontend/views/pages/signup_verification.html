@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Verification </title>
+    <!-- <link rel="stylesheet" href="..\..\css\signup2.css"> -->
+    <link rel="stylesheet" href="/css/signup2.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class="veryfication_container">
+        <div class="verification_forms">
+            <div class="verification-form-content">
+
+                <div class="verification-form">
+                    
+                    <div class="verification_title">Verification</div>
+                    <form>
+                        <div class="verification_input-boxes">
+
+                            <div class="verification_input-box">
+                                <i class="fas fa-key"></i>
+                                <input type="number" step="0.01" id="otpInput" placeholder="Enter verification code" required>
+                            </div>
+                            <div class="button verification_input-box">
+                                <input type="submit" value="Signup" onclick="verifyOTP(event)">
+                            </div>
+                            <div class="text verification-text">Already have an account? <label><a href="/login">Login now</a></label></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="verification_logo">
+        <img src="/public/assets/images/logo_Note.png" alt="" width="130" height="130">
+    </div>
+
+    <script src="/js/signup_verification.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+textarea {
+  width: 80%;
+  height: 555px; /* Set a fixed height for the textarea */
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  margin-left: 10%;
+}
+
+.login_logo {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: -1%;
+  left: 0%;
+}
+
+.blog_submit {
+  position: relative;
+  right: 0%;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+button {
+  padding: 7px 20px;
+  background-color: #174C7E;
+  border-radius: 3px;
+  font-family: "Poppins" , sans-serif;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.title_input {
+ color: aqua;
+  font-family: "Poppins" , sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  font-weight: 600;
+  font-family: "Poppins" , sans-serif;
+  width: 45%;
+  padding: 10px;
+  font-size: 24px;
+  color: #174C7E;
+  margin-bottom: 10px;
+}

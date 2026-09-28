@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Signup </title>
+    <!-- <link rel="stylesheet" href="..\..\css\signup.css"> -->
+    <link rel="stylesheet" href="/css/signup.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script>
+        function sendOTP() {
+            window.location.href = "signup_verification.html";
+        }
+    </script> -->
+</head>
+
+<body>
+    <div class="signup_container">
+        <div class="signup_forms">
+            <div class="signup-form-content">
+
+                <div class="sigup-form">
+
+                    <div class="signup_title">Signup</div>
+                    <form action="#">
+                        <div class="signup_input-boxes">
+                            <div class="signup_input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="username" placeholder="Enter your username" required>
+                            </div>
+                            <div class="signup_input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="signup_input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" name="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="signup_input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" name="confirmPassword" placeholder="Enter your confirm password" required>
+                            </div>
+
+                            <div class="signup_terms_text">
+                                <input type="checkbox" name="terms" id="terms" required>
+                                <a href="#">I Agree Terms & Conditions</a>
+                            </div>
+                            <div class="button signup_input-box">
+                                <input type="submit" value="Send OTP" onclick="sendOTP(event)">
+                            </div>
+                            <div class="text login-text">Already have an account? <label><a href="/index">Login
+                                        now</a></label></div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signup_logo">
+        <img src="/public/assets/images/logo_Note.png" alt="" width="130" height="130">
+    </div>
+
+    <script src="/js/signup.js"></script>
+
+</body>
+
+</html>

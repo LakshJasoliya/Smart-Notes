@@ -1,0 +1,143 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    /* background: #7d2ae8; */
+    padding: 30px;
+}
+.login_logo{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.login_container{
+    position: relative;
+    max-width:  350px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+}
+.login_container .login_forms{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.login_container .login-form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .login-form-content .login-form
+{
+  width: calc(100% / 2 - 25px); 
+} */
+.login_forms .login-form-content .login_title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+.login_forms .login-form-content .login_title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #174C7E;
+}
+.login_forms .login-form-content .login_input-boxes{
+    margin-top: 30px;
+}
+.login_forms .login-form-content .login_input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 111%;
+    margin: 10px 0;
+    position: relative;
+}
+.login-form-content .login_input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.login-form-content .login_input-box input:focus,
+.login-form-content .login_input-box input:valid{
+  border-color: #174C7E;
+}  
+.login-form-content .login_input-box i{
+    position: absolute;
+    color: #174C7E;
+    font-size: 17px;
+}
+.login_forms .login-form-content .login_forget_pass_text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.login_forms .login-form-content .login_forget_pass_text a{
+    text-decoration: none;
+    color: #174C7E;
+}
+.login_forms .login-form-content .login_forget_pass_text a:hover{
+    text-decoration: underline;
+}
+.login_forms .login-form-content .button{
+    color: #fff;
+    margin-top: 40px;
+}
+.login_forms .login-form-content .button input{
+    color: #fff;
+    /* background: #7d2ae8; */
+    background-color: #174C7E;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.login_forms .login-form-content .button input:hover{
+    background:rgb(96, 124, 151);
+    /* background: #5b13b9; */
+}
+.login_forms .login-form-content label{
+    color: #174C7E;
+    cursor: pointer;
+}
+.login_forms .login-form-content .sign-up-text
+{
+  text-align: center;
+  margin-top: 25px;
+}
+
+.login_forms .login-form-content .sign-up-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.login_forms .login-form-content .sign-up-text a{
+    text-decoration: none;
+    color: #174C7E;
+}
+.login_forms .login-form-content .sign-up-text a:hover{
+    text-decoration: underline;
+}

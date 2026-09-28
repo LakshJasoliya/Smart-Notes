@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="/css/explore_blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <ul>
+                <li><a href="/dashboard">Home</a></li>
+                <li class="dropdown" id="blogDropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown('blogDropdown')">Blog</a>
+                    <div class="dropdown-content" id="blogDropdownContent">
+                        <div class="dropdown-item">
+                            <a href="#" class="sub-dropbtn" onclick="toggleDropdown('DDCETDropdown')">DDCET</a>
+                            <div class="sub-dropdown-content" id="DDCETDropdownContent">
+                                <a href="blog/1713673342653517345">Physics</a>
+                                <a href="/blog/1713675337073663501">Soft skills</a>
+                                <a href="/public/assets/images/maths.png">Maths</a>
+                                <a href="/public/assets/images/environmental_science.png">Environmental Science</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Explore Blogs</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/team">Team</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="custom-dropdown">
+                <button onclick="toggleDropdown_p()" class="custom-dropbtn"><img src="/public/assets/images/profile.png"
+                        alt=""></button>
+                <div id="customDropdownContent" class="custom-dropdown-content">
+                    <p><b>Username:</b> <span id="customUsername"></span></p>
+                    <p><b>Email:</b> <span id="customEmail"></span></p>
+                    <div class="btn">
+                        <button id="customLogoutBtn">Logout &nbsp;<i class="fa fa-right-from-bracket"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        function WriteBlog() {
+            window.location.href = "/editor";
+        }
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId + "Content");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+    </script>
+    <script src="/js/dashboard.js"></script>
+    <div class="login_logo">
+        <img src="/public/assets/images/logo_Note.png" alt="" width="105" height="105">
+    </div>
+    <main>
+        <!-- <article>
+            <h2 style="color: #174C7E;">Physics-ch2</h2>
+            <p>April 21, 2024 posted by john_patel</p>
+            <a href="#">Read more</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="delete-btn" style="color: #174C7E; border-color: #174C7E; border-width: 1px;">Delete</button>
+        </article>
+
+         <article>
+            <h2 style="color: #174C7E;">Eng-TOC</h2>
+            <p>April 21, 2024 posted by john_patel</p>
+            <a href="#">Read more</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="delete-btn">Delete</button>
+        </article>
+
+        <article>
+            <h2 style="color: #174C7E;">Maths</h2>
+            <p>April 22, 2024 posted by arvind_joshi</p>
+            <a href="#">Read more</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="delete-btn">Delete</button>
+        </article>
+
+        <article>
+            <h2 style="color: #174C7E;">Environmental Science</h2>
+            <p>May 02, 2024 posted by rohit_thkkar</p>
+            <a href="#">Read more</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="delete-btn">Delete</button>
+        </article> -->
+    </main>
+    <script src="/js/explore_blog.js"></script>
+    <!-- <script src="scripts.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*
+.body3{
+    font-family: "Poppins" , sans-serif;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.feedback_container{
+    position: relative;
+    max-width:  350px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+}
+.feedback_container .feedback_forms{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.feedback_container .feedback-form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback_forms .feedback-form-content .feedback_title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+.feedback_forms .feedback-form-content .feedback_title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #174C7E;
+}
+.feedback_forms .feedback-form-content .feedback_input-boxes{
+    margin-top: 30px;
+}
+.feedback_forms .feedback-form-content .feedback_input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 111%;
+    margin: 10px 0;
+    position: relative;
+}
+.feedback-form-content .feedback_input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.textarea-field{
+    width: 300px;
+    height: 150px;
+    font-size: 16px;
+    font-family: "Poppins" , sans-serif;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #174C7E;
+    border-radius: 14px;
+    outline: none;
+}
+
+.feedback-form-content .feedback_input-box input:focus,
+.feedback-form-content .feedback_input-box input:valid{
+  border-color: #174C7E;
+}  
+.feedback-form-content .feedback_input-box i{
+    position: absolute;
+    color: #174C7E;
+    font-size: 17px;
+}
+
+.feedback_forms .feedback-form-content .button{
+    color: #fff;
+    margin-top: 40px;
+}
+.feedback_forms .feedback-form-content .button input{
+    color: #fff;
+    /* background: #7d2ae8; */
+    background-color: #174C7E;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.feedback_forms .feedback-form-content .button input:hover{
+    background:rgb(96, 124, 151);
+  
+}

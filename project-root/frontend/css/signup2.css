@@ -1,0 +1,141 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    /* background: #7d2ae8; */
+    padding: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin:0;
+}
+
+.verification_logo{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.veryfication_container{
+    position: relative;
+    max-width:  350px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+}
+.veryfication_container .verification_forms{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.veryfication_container .verification-form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.verification_forms .verification-form-content .verification_title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+.verification_forms .verification-form-content .verification_title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #174C7E;
+}
+.verification_forms .verification-form-content .verification_input-boxes{
+    margin-top: 30px;
+}
+.verification_forms .verification-form-content .verification_input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 111%;
+    margin: 10px 0;
+    position: relative;
+}
+.verification-form-content .verification_input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.verification-form-content .verification_input-box input:focus,
+.verification-form-content .verification_input-box input:valid{
+  border-color: #174C7E;
+}  
+.verification-form-content .verification_input-box i{
+    position: absolute;
+    color: #174C7E;
+    font-size: 17px;
+}
+.verification_forms .verification-form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.verification_forms .verification-form-content .button{
+    color: #fff;
+    margin-top: 40px;
+}
+.verification_forms .verification-form-content .button input{
+    color: #fff;
+    /* background: #7d2ae8; */
+    background-color: #174C7E;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.verification_forms .verification-form-content .button input:hover{
+    background:rgb(96, 124, 151);
+    /* background: #5b13b9; */
+}
+.verification_forms .verification-form-content label{
+    color: #174C7E;
+    cursor: pointer;
+}
+.verification_forms .verification-form-content .sign-up-text
+{
+  text-align: center;
+  margin-top: 25px;
+}
+
+.verification_forms .verification-form-content .verification-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.verification_forms .verification-form-content .verification-text a{
+    text-decoration: none;
+    color: #174C7E;
+}
+.verification_forms .verification-form-content .verification-text a:hover{
+    text-decoration: underline;
+}

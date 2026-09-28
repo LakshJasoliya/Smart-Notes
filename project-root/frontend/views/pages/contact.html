@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <header>
+        <div class="header-content">
+            <ul>
+                <li><a href="/dashboard">Home</a></li>
+                <li class="dropdown" id="blogDropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown('blogDropdown')">Blog</a>
+                    <div class="dropdown-content" id="blogDropdownContent">
+                        <div class="dropdown-item">
+                            <a href="#" class="sub-dropbtn" onclick="toggleDropdown('DDCETDropdown')">DDCET</a>
+                            <div class="sub-dropdown-content" id="DDCETDropdownContent">
+                                <a href="blog/1713673342653517345">Physics</a>
+                                <a href="/blog/1713675337073663501">Soft skills</a>
+                                <a href="/public/assets/images/maths.png">Maths</a>
+                                <a href="/public/assets/images/environmental_science.png">Environmental Science</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/explore_blog">Explore Blogs</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/team">Team</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="custom-dropdown">
+                <button onclick="toggleDropdown_p()" class="custom-dropbtn"><img src="/public/assets/images/profile.png" alt=""></button>
+                <div id="customDropdownContent" class="custom-dropdown-content">
+                <p><b>Username:</b> <span id="customUsername"></span></p>
+                <p><b>Email:</b> <span id="customEmail"></span></p>
+                <div class="btn">
+                    <button id="customLogoutBtn">Logout &nbsp;<i class="fa-solid fa-right-from-bracket"></i></button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="login_logo">
+        <img src="/public/assets/images/logo_Note.png" alt="" width="105" height="105">
+    </div> 
+    <script>
+        function WriteBlog() {
+            window.location.href = "/editor";
+        }
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId + "Content");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+        </script>
+    <div class="body3">
+    <div class="contact_container">
+        <div class="contact_forms">
+            <div class="contact-form-content">
+                <div class="contact-form">
+                    <div class="contact_title">Contact Us</div>
+                    <form id="feedbackForm">
+                        <div class="contact_input-boxes">
+
+                            <div class="contact_input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="contact_input-box">
+                                <i class="fas fa-solid fa-window-restore"></i>
+                                <input type="text" id="subject" placeholder="Subject" required>
+                            </div>
+
+                            <textarea type="text" class="textarea-field" id="message" placeholder="Your Message"></textarea>
+
+                            <div class="button contact_input-box">
+                                <input type="submit" value="Submit" onclick="submitFeedback(event)">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/contact.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

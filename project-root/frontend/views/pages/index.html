@@ -1,0 +1,62 @@
+<!-- This is login.html -->
+
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Login </title>
+  <!-- <link rel="stylesheet" href="..\..\css\login.css"> -->
+  <link rel="stylesheet" href="/css/login.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="login_container">
+    <div class="login_forms">
+      <div class="login-form-content">
+
+        <div class="login-form">
+
+          <div class="login_title">Login</div>
+          <form id="login-form">
+            <div class="login_input-boxes">
+              <div class="login_input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+              </div>
+
+              <div class="login_input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+              </div>
+
+              <div class="login_forget_pass_text"><a href="/forget_password1" onclick="forgotPasswordFunc(event)">Forgot
+                  password?</a></div>
+
+              <!-- <div class="login_forget_pass_text"  id="forgotPasswordLink" onclick="forgotPasswordFunc(event)">Forgot password?</a></div> -->
+
+              <div class="button login_input-box">
+                <input type="submit" value="Login" onclick="loginFunc(event)">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label><a href="/signup">Sigup now</a></label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="login_logo">
+    <img src="/public/assets/images/logo_Note.png" alt="" width="130" height="130">
+  </div>
+
+  <!-- <script src="..\..\js\index.js"></script> -->
+  <script src="/js/index.js"></script>
+
+</body>
+
+</html>

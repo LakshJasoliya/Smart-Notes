@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/team.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <ul>
+                <li><a href="/dashboard">Home</a></li>
+                <li class="dropdown" id="blogDropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown('blogDropdown')">Blog</a>
+                    <div class="dropdown-content" id="blogDropdownContent">
+                        <div class="dropdown-item">
+                            <a href="#" class="sub-dropbtn" onclick="toggleDropdown('DDCETDropdown')">DDCET</a>
+                            <div class="sub-dropdown-content" id="DDCETDropdownContent">
+                                <a href="blog/1713673342653517345">Physics</a>
+                                <a href="/blog/1713675337073663501">Soft skills</a>
+                                <a href="/public/assets/images/maths.png">Maths</a>
+                                <a href="/public/assets/images/environmental_science.png">Environmental Science</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/explore_blog">Explore Blogs</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="custom-dropdown">
+                <button onclick="toggleDropdown_p()" class="custom-dropbtn"><img src="/public/assets/images/profile.png" alt=""></button>
+                <div id="customDropdownContent" class="custom-dropdown-content">
+                <p><b>Username:</b> <span id="customUsername"></span></p>
+                <p><b>Email:</b> <span id="customEmail"></span></p>
+                <div class="btn">
+                    <button id="customLogoutBtn">Logout &nbsp;<i class="fa-solid fa-right-from-bracket"></i></button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </header> 
+
+    <script src="/js/dashboard.js"></script>
+    <div class="login_logo">
+        <img src="/public/assets/images/logo_Note.png" alt="" width="105" height="105">
+    </div> 
+    <script>
+        function WriteBlog() {
+            window.location.href = "/editor";
+        }
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId + "Content");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+    </script>
+    <section class="team">
+        <div class="center">
+            <h1>Our Team</h1>
+        </div>
+        <div class="team-content">
+            <div class="box">
+                <img src="/public/assets/images/laksh.png">
+                <h3>J Laksh</h3>
+                <h5>UI Developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="https://www.instagram.com/laksh_jasoliya222/"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/public/assets/images/jemit.png">
+                <h3>B Jemit</h3>
+                <h5>Frontend Developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="https://www.instagram.com/jemit_bagadiya/"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/public/assets/images/keval.jpg">
+                <h3>H Keval</h3>
+                <h5>Backend Developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="https://www.instagram.com/keval_hansaliya/"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

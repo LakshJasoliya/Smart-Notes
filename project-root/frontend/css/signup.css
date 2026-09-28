@@ -1,0 +1,137 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    /* background: #7d2ae8; */
+    padding: 30px;
+}
+.signup_logo{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.signup_container{
+    position: relative;
+    max-width:  350px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+}
+.signup_container .signup_forms{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.signup_container .signup-form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signup_forms .signup-form-content .signup_title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+.signup_forms .signup-form-content .signup_title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #174C7E;
+}
+.signup_forms .signup-form-content .signup_input-boxes{
+    margin-top: 30px;
+}
+.signup_forms .signup-form-content .signup_input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 111%;
+    margin: 10px 0;
+    position: relative;
+}
+.signup-form-content .signup_input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.signup-form-content .signup_input-box input:focus,
+.signup-form-content .signup_input-box input:valid{
+  border-color: #174C7E;
+}  
+.signup-form-content .signup_input-box i{
+    position: absolute;
+    color: #174C7E;
+    font-size: 17px;
+}
+.signup_forms .signup-form-content .signup_terms_text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.signup_forms .signup-form-content .signup_terms_text a{
+    text-decoration: none;
+    color: #174C7E;
+}
+.signup_forms .signup-form-content .button{
+    color: #fff;
+    margin-top: 40px;
+}
+.signup_forms .signup-form-content .button input{
+    color: #fff;
+    /* background: #7d2ae8; */
+    background-color: #174C7E;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.signup_forms .signup-form-content .button input:hover{
+    background:rgb(96, 124, 151);
+    /* background: #5b13b9; */
+}
+.signup_forms .signup-form-content label{
+    color: #174C7E;
+    cursor: pointer;
+}
+.signup_forms .signup-form-content .sign-up-text
+{
+  text-align: center;
+  margin-top: 25px;
+} 
+
+.signup_forms .signup-form-content .login-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    right: 50px;
+}
+.signup_forms .signup-form-content .login-text a{
+    text-decoration: none;
+    color: #174C7E;
+}
+.signup_forms .signup-form-content .login-text a:hover{
+    text-decoration: underline;
+}
